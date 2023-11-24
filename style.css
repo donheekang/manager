@@ -7,23 +7,23 @@ body {
 }
 
 .container {
-    max-width: 800px; /* 고정 폭 대신 최대 폭 설정 */
-    width: 90%; /* 화면 크기에 따라 너비 조정 */
+    max-width: 800px;
+    width: 90%;
     margin: auto;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.8); /* 반투명 배경 */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 컨테이너에 그림자 추가 */
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header {
     background: #50b747;
     color: white;
-    padding: 20px 0; /* 패딩 조정 */
+    padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2em; /* 상대적 크기로 변경 */
+    font-size: 2em;
 }
 
 .event-highlight {
@@ -84,25 +84,36 @@ footer {
     color: white;
 }
 
-/* 모바일 및 작은 화면용 미디어 쿼리 */
+/* 모바일 화면을 위한 미디어 쿼리 */
 @media screen and (max-width: 600px) {
-    .container {
-        width: 95%;
-    }
-
     header h1 {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
-    .event-highlight h2, 
-    .event-highlight .support-amount, 
+    .event-highlight h2 {
+        font-size: 1.3em;
+    }
+
+    .event-highlight .support-amount {
+        font-size: 1.6em;
+    }
+
     .support-detail .highlight-message, 
     .support-detail .highlight {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 
-    .support-detail .subtext, 
+    .support-detail .subtext {
+        font-size: 1.1em;
+    }
+
     button {
-        font-size: 0.9em;
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+
+    .container {
+        width: 98%;
+        padding: 10px;
     }
 }
