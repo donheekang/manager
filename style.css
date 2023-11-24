@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #50b747;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    text-align: center;
+}
+
+header h1 {
+    padding: 5px 0;
+}
+
+.event-highlight {
+    background: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.event-highlight h2 {
+    color: #e8491d;
+    font-size: 24px;
+}
+
+.event-highlight .support-amount {
+    color: #50b747;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.support-detail .highlight-message {
+    font-size: 28px;
+    margin: 10px 0;
+    color: #e8491d;
+}
+
+.support-detail .highlight {
+    color: #d35400;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #aaa;
+}
+
+.support-detail .subtext {
+    font-size: 20px;
+    color: #666;
+}
+
+button {
+    background-color: #50b747;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: white;
+}
