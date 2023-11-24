@@ -7,26 +7,26 @@ body {
 }
 
 .container {
-    width: 80%;
+    max-width: 800px; /* 고정 폭 대신 최대 폭 설정 */
+    width: 90%; /* 화면 크기에 따라 너비 조정 */
     margin: auto;
     overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8); /* 반투명 배경 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 컨테이너에 그림자 추가 */
 }
 
 header {
     background: #50b747;
     color: white;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
+    padding: 20px 0; /* 패딩 조정 */
     text-align: center;
 }
 
 header h1 {
-    padding: 5px 0;
+    font-size: 2em; /* 상대적 크기로 변경 */
 }
 
 .event-highlight {
-    background: white;
     text-align: center;
     padding: 40px 20px;
     margin-top: 20px;
@@ -35,30 +35,30 @@ header h1 {
 
 .event-highlight h2 {
     color: #e8491d;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 .event-highlight .support-amount {
     color: #50b747;
-    font-size: 36px;
+    font-size: 2em;
     font-weight: bold;
 }
 
 .support-detail .highlight-message {
-    font-size: 28px;
+    font-size: 1.2em;
     margin: 10px 0;
     color: #e8491d;
 }
 
 .support-detail .highlight {
     color: #d35400;
-    font-size: 36px;
+    font-size: 1.8em;
     font-weight: bold;
     text-shadow: 2px 2px 4px #aaa;
 }
 
 .support-detail .subtext {
-    font-size: 20px;
+    font-size: 1em;
     color: #666;
 }
 
@@ -66,10 +66,10 @@ button {
     background-color: #50b747;
     color: white;
     border: none;
-    padding: 15px 30px;
+    padding: 12px 24px;
     margin-top: 20px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1em;
     transition: background-color 0.3s;
 }
 
@@ -82,4 +82,27 @@ footer {
     padding: 20px 0;
     background: #333;
     color: white;
+}
+
+/* 모바일 및 작은 화면용 미디어 쿼리 */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .event-highlight h2, 
+    .event-highlight .support-amount, 
+    .support-detail .highlight-message, 
+    .support-detail .highlight {
+        font-size: 1.2em;
+    }
+
+    .support-detail .subtext, 
+    button {
+        font-size: 0.9em;
+    }
 }
